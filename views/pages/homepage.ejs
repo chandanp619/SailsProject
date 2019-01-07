@@ -5,14 +5,68 @@ For more information, see:
 • https://sailsjs.com/documentation/concepts/routes
 -->
 
+<div class="container-fluid banner">
+  <div class="row">
+      <img src="/images/banner.jpg" />
+  </div>
+  
+</div>
 
-<div class="default-page">
-  <div class="header">
+<div class="container">
+    <div class="row">
     <h1 id="main-title" class="container"><%= __('Home') %></h1>
     <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
   </div>
-  <div class="main container clearfix">
+  <div class="clearfix">
       <h2><%= currentDate %></h2>
       <h3><%= name %></h3>
   </div>
+</div>
+<div class="container who-we-are">
+    <div class="row">
+      <div class="col-sm-8">
+          <img src="/images/who-we-are.jpg" />
+      </div>
+      <div class="col-sm-4">
+        <h2 class="sec-title">Who We Are</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et eros a erat laoreet ultricies at ac justo. Duis aliquam nisi ipsum, quis tempor odio vestibulum sed. Fusce leo libero, viverra ut luctus at, malesuada ac enim. In blandit placerat mauris, ut commodo lectus congue at. Aenean pellentesque viverra lacus, quis cursus felis fringilla nec.</p>
+        <p><button type="button" class="btn btn-danger">Learn More</button></p>
+      </div>
+    </div>
+</div>
+
+<div class="container services">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="sec-title">What We Offer</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="card-deck">
+            <div class="card">
+              <img src="/images/architecture-1867596_1920.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Plumbing</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted"><a href="#">Learn More</a></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/plumbing-585658_1920.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Repairing</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted"><a href="#">Learn More</a></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/barcelona-953904_1920.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Garden Watering</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted"><a href="#">Learn More</a></small></p>
+              </div>
+            </div>
+        </div>
+</div>
 </div>

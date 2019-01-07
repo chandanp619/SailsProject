@@ -8,7 +8,8 @@
 
     <%/* If you want to discourage search engines from indexing this site, uncomment the following line: */%>
     <%/* <meta name="robots" content="noindex"> */%>
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <!--
         Stylesheets and Preprocessors
@@ -32,16 +33,36 @@
     -->
 
     <!--STYLES-->
-    <link rel="stylesheet" href="/styles/importer.css">
     <link rel="stylesheet" href="/styles/common.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/pages/user-login.css">
     <!--STYLES END-->
   </head>
 
   <body>
-    <header>
-      <a href="/"><img class="logo" alt="Logo" src="/images/logo.png" /></a>
-    </header>
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-sm-4">
+            <a href="/"><img class="logo" alt="Logo" src="/images/logo.png" /></a>
+        </div>
+        <div class="col-sm-8">
+          <nav class="navbar navbar-expand-lg">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+                </ul>
+              <div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
     <%- body %>
 
 
@@ -110,9 +131,12 @@
           + Use a different preprocessor, like TypeScript
 
     -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!--SCRIPTS-->
     <script src="/dependencies/sails.io.js"></script>
+    <script src="/js/common.js"></script>
     <script src="/js/pages/user-login.page.js"></script>
     <!--SCRIPTS END-->
   </body>
