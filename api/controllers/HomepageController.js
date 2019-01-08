@@ -8,7 +8,14 @@
 module.exports = {
   
 index:function(request,response){
-    return response.view('pages/homepage', {currentDate: (new Date()).toString(),name:'Chandan Pradhan'});
+
+    var db = sails.getDatastore().manager;
+
+    db.collection('blogs').find({}).toArray(function(err,blogs){
+        return response.view('pages/homepage', {currentDate: (new Date()).toString(),name:'Chandan Pradhan',blogs:blogs});
+    });
+    
+    
 }
 };
 

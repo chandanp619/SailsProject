@@ -6,10 +6,13 @@ body{
     font-size: 22px;
     line-height: 35px;
 }
+a{ color:#fff;}
+
 .sec-title{ padding:20px 0px; color:#333; font-weight: 600;}
 .error-404{ padding-top: 100px; position: absolute; top:200px; color:#fff;}
 .header{ height:80px; padding:10px 20px; position: fixed; z-index:2 ;}
 .header.fixed{background-color: rgba(150,150,150,0.7);}
+.navbar-nav .nav-link{ font-size:22px; font-weight: 400;}
 .banner{overflow: hidden;}
 .banner img{width:100%; position: relative; overflow: hidden;}
 .who-we-are{ padding:60px 0px; }
@@ -19,4 +22,13 @@ body{
 .review{ background-color: #000; padding:60px 0px 60px 0px; color:#fff;}
 .footer{ background-color: #222; color:#fff; padding:20px 0px; border-top:3px solid #a00}
 .footer h4{ text-transform: uppercase;}
+.footer .links{ margin: 0; padding:0; list-style-type: none;}
+.footer .links li a{ color:#fff;}
+.footer .social-links{margin: 0; padding:0; list-style-type: none;}
+.footer .social-links li{ display: inline-block; font-size: 38px; margin-right:10px; }
+.footer .social-links li a{color:#fff;}
+
 .copyright{ background-color: #222; padding:40px 0px 0px 0px;}
+
+.blogs{ margin:40px 0px;}
+.blogs .list-group-item img{ width:100%;}

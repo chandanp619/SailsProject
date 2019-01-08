@@ -1,0 +1,43 @@
+<!--
+This is your default homepage.
+For more information, see:
+• https://sailsjs.com/documentation/concepts/views
+• https://sailsjs.com/documentation/concepts/routes
+-->
+
+<div class="container-fluid banner">
+  <div class="row">
+      <img src="/images/man-791049_1920.jpg" />
+  </div>
+  
+</div>
+<div class="blogs">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="title">Blogs</h2>
+    </div>
+  </div>
+  <div class="list-group">
+      <% blogs.forEach(function(blog){ %>
+    <a href="/blog/<%= blog._id %>" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="/images/coffee-2425254_1920.jpg">
+        </div>
+        <div class="col-sm-8">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1"><%= blog.title %></h5>
+              <small>02/01/2019</small>
+            </div>
+            <p class="mb-1"><%= blog.content %></p>
+            <small>Read more</small>
+          </div>
+      </div>
+    </a>
+    <% }) %>
+    
+  </div>
+
+</div>
+</div>

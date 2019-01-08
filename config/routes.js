@@ -20,7 +20,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/':  'HomepageController.index',
-  '/user-login':{view: 'pages/user-login'},
+  '/blog':'BlogController.index',
+  '/blog/:id':'BlogController.single',
 
 
   /***************************************************************************
